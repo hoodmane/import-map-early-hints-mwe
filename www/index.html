@@ -12,6 +12,12 @@
     <link rel="modulepreload" href="someLib.mjs" />
   </head>
   <body>
-    <script src="index.mjs" type="module"></script>
+    <script type="module">
+      import { getSomething } from "./index.mjs";
+
+      const p = document.createElement("p");
+      p.innerText = getSomething();
+      document.body.appendChild(p);
+    </script>
   </body>
 </html>

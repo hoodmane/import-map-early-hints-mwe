@@ -1,3 +1,5 @@
 import { Something } from "some-lib";
 
-console.log(Something);
+export function getSomething() {
+  return Something;
+}
