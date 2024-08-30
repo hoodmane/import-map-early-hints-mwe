@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="importmap">
+      {
+        "imports": {
+          "some-lib": "./someLib.mjs"
+        }
+      }
+    </script>
+    <link rel="modulepreload" href="someLib.mjs" />
+  </head>
+  <body>
+    <script src="index.mjs" type="module"></script>
+  </body>
+</html>
